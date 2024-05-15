@@ -3,10 +3,7 @@
     <div class="header">
       <div class="header__content">
         <div class="header__username">
-          <span>
-            Имя юзера
-          </span>
-
+          <h2>Привет, <span>Alex</span></h2>
         </div>
         <div class="header__burger">
           <p>Burger</p>
@@ -19,12 +16,10 @@
 <style lang="scss" scoped>
 .header {
   width: 100%;
-  height: 50px;
-
+  margin-bottom: 20px;
 
   &__username {
-    span {
-      font-family: "Roboto-Medium";
+    h2 {
       font-size: 24px;
     }
   }

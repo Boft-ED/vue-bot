@@ -121,16 +121,24 @@ export default {
 
     &__favorite {
         position: absolute;
-        top: 5px;
+        top: 10px;
         cursor: pointer;
-        right: 5px;
+        right: 10px;
         z-index: 10;
+
+        img {
+            width: 25px;
+            height: 25px;
+            background-color: #f5f5f5;
+            padding: 5px;
+            border-radius: 25px;
+        }
     }
 
     &__item {
         display: flex;
         justify-content: space-between;
-        border-radius: 10px;
+        border-radius: 25px;
         background-color: #fff;
         padding: 20px 20px 30px 20px;
     }
@@ -142,21 +150,21 @@ export default {
 
         &_discount {
             font-family: "Roboto";
-            font-size: 16px;
+            font-size: 18px;
             color: #f95353;
         }
 
         &_base {
             font-family: "Roboto-Regular";
             margin-left: 5px;
-            font-size: 10px;
+            font-size: 12px;
             color: #9f9b9b;
         }
     }
 
     &__title {
         font-family: "Roboto-Regular";
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 5px;
     }
 

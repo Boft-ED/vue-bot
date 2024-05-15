@@ -19,7 +19,7 @@ const props = defineProps({
       <img :src="imageUrl" alt="Sneaker" />
     </div>
     <div class='product__price'>
-      <span>{{ price }} ₽</span>
+      <span>{{ price }}₽</span>
     </div>
     <RouterLink :to="{ name: 'ProductPage', params: { id: Number(id) } }">
       <div class='product__title'>{{ title }}</div>
@@ -48,7 +48,7 @@ const props = defineProps({
   }
 
   &__img {
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: #fff;
     padding: 20px;
     margin-bottom: 5px;
@@ -81,10 +81,18 @@ const props = defineProps({
 
   &__favorite {
     position: absolute;
-    top: 5px;
+    top: 10px;
     cursor: pointer;
-    right: 5px;
+    right: 10px;
     z-index: 10;
+
+    img {
+      width: 25px;
+      height: 25px;
+      background-color: #f5f5f5;
+      padding: 5px;
+      border-radius: 25px;
+    }
   }
 
   &__add-btn {}

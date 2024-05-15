@@ -24,6 +24,7 @@ const emit = defineEmits(['addToFavorite', 'addToCart'])
 
 <style lang="scss" scoped>
 .card-list {
+    margin-bottom: 40px;
 
     h2 {
         margin-bottom: 5px;
