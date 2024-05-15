@@ -34,7 +34,7 @@ const emit = defineEmits(['addToFavorite', 'addToCart'])
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 15px;
+        gap: 10px;
     }
 }
 
