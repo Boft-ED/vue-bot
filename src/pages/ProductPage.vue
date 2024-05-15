@@ -51,6 +51,9 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+body {
+    background-color: red;
+}
 .back {
     margin: 10px 0px;
 
@@ -67,8 +70,8 @@ onMounted(() => {
         text-align: center;
 
         img {
-            width: auto;
-            height: 300px;
+            width: 100%;
+            height: auto;
         }
     }
 

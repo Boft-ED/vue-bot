@@ -1,6 +1,5 @@
 <script setup>
 import { computed, provide, ref, watch } from 'vue';
-import axios from 'axios';
 
 import Header from './components/Header.vue';
 import Drawer from './components/Drawer.vue';
@@ -52,18 +51,13 @@ provide('cart', {
   removeFromCart
 })
 
-// корзина 
 
 </script>
 
 <template>
   <div>
-    <Drawer v-if="drawerOpen" :total-price="totalPrice" :vat-price="vatPrice" />
     <Header :total-price="totalPrice" @open-drawer="openDrawer" />
-
-    <div class="p-10">
-      <RouterView />
-    </div>
+    <RouterView />
     <Menu />
   </div>
 

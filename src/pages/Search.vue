@@ -163,7 +163,7 @@ watch(filters, fetchItems);
             padding: 10px 28px 10px 15px;
             font-size: 16px;
             color: #797979;
-            border: 2px solid #EAEAEA;
+            border: 2px solid #f5f5f5;
         }
 
         &::after {

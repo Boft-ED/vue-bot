@@ -38,7 +38,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .product {
-  width: 48%;
+  width: 47%;
   position: relative;
 
   a {
@@ -49,7 +49,7 @@ const props = defineProps({
 
   &__img {
     border-radius: 10px;
-    background-color: #EAEAEA;
+    background-color: #fff;
     padding: 20px;
     margin-bottom: 5px;
     text-align: center;
