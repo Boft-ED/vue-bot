@@ -34,7 +34,7 @@ export default {
             <swiper-slide>
                 <div class="card-banner-slider__item">
                     <div class="card-banner-slider__img">
-                        <img src="../../sneakers/sneakers-1.jpg" alt="">
+                        <img src="../../public/sneakers/sneakers-1.jpg" alt="">
                     </div>
                     <div class="card-banner-slider__info">
                         <div class="card-banner-slider__price">
@@ -53,15 +53,57 @@ export default {
             <swiper-slide>
                 <div class="card-banner-slider__item">
                     <div class="card-banner-slider__img">
-                        <img src="../../sneakers/sneakers-1.jpg" alt="">
+                        <img src="../../public/sneakers/sneakers-1.jpg" alt="">
                     </div>
                     <div class="card-banner-slider__info">
                         <div class="card-banner-slider__price">
                             <p class="card-banner-slider__price_discount">9900₽</p>
-                            <s class="card-banner-slider__price_base">15000</s>
+                            <s class="card-banner-slider__price_base">15000₽</s>
                         </div>
-                        <p>Nike Air Forse</p>
-                        <span>С мягкой подошвой</span>
+                        <p class="card-banner-slider__title">Nike Air Forse</p>
+                        <span class="card-banner-slider__descr">С мягкой подошвой и прекрасной замшей</span>
+                    </div>
+
+                    <div class='card-banner-slider__favorite'>
+                        <img :src="!isFavorite ? '/like-1.svg' : '/like-2.svg'" alt="Favorite" />
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card-banner-slider__item">
+                    <div class="card-banner-slider__img">
+                        <img src="../../public/sneakers/sneakers-1.jpg" alt="">
+                    </div>
+                    <div class="card-banner-slider__info">
+                        <div class="card-banner-slider__price">
+                            <p class="card-banner-slider__price_discount">9900₽</p>
+                            <s class="card-banner-slider__price_base">15000₽</s>
+                        </div>
+                        <p class="card-banner-slider__title">Nike Air Forse</p>
+                        <span class="card-banner-slider__descr">С мягкой подошвой и прекрасной замшей</span>
+                    </div>
+
+                    <div class='card-banner-slider__favorite'>
+                        <img :src="!isFavorite ? '/like-1.svg' : '/like-2.svg'" alt="Favorite" />
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="card-banner-slider__item">
+                    <div class="card-banner-slider__img">
+                        <img src="../../public/sneakers/sneakers-1.jpg" alt="">
+                    </div>
+                    <div class="card-banner-slider__info">
+                        <div class="card-banner-slider__price">
+                            <p class="card-banner-slider__price_discount">9900₽</p>
+                            <s class="card-banner-slider__price_base">15000₽</s>
+                        </div>
+                        <p class="card-banner-slider__title">Nike Air Forse</p>
+                        <span class="card-banner-slider__descr">С мягкой подошвой и прекрасной замшей</span>
+                    </div>
+
+                    <div class='card-banner-slider__favorite'>
+                        <img :src="!isFavorite ? '/like-1.svg' : '/like-2.svg'" alt="Favorite" />
                     </div>
                 </div>
             </swiper-slide>
@@ -90,7 +132,7 @@ export default {
         justify-content: space-between;
         border-radius: 10px;
         background-color: #fff;
-        padding: 20px 20px 25px 20px;
+        padding: 20px 20px 30px 20px;
     }
 
     &__price {

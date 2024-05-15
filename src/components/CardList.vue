@@ -11,27 +11,22 @@ const emit = defineEmits(['addToFavorite', 'addToCart'])
 </script>
 
 <template>
-    <div>
-        <div class="list">
-            <div class='list__content'>
-                <Card v-for="item in items" :key="item.id" :id="item.id" :title="item.title" :imageUrl="item.imageUrl"
-                    :price="item.price" :onClickAdd="isFavorites ? null : () => emit('addToCart', item)"
-                    :onClickFavorite="isFavorites ? null : () => emit('addToFavorite', item)"
-                    :isFavorite="item.isFavorite" :isAdded="item.isAdded" />
-            </div>
+    <div class="card-list">
+        <h2>Рекоммендации для тебя</h2>
+        <div class='card-list__content'>
+            <Card v-for="item in items" :key="item.id" :id="item.id" :title="item.title" :imageUrl="item.imageUrl"
+                :price="item.price" :onClickAdd="isFavorites ? null : () => emit('addToCart', item)"
+                :onClickFavorite="isFavorites ? null : () => emit('addToFavorite', item)" :isFavorite="item.isFavorite"
+                :isAdded="item.isAdded" />
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.list {
-    &__title {
-        h2 {
-            font-family: "Roboto-Medium";
-            margin-bottom: 10px;
-            font-weight: 400;
-            font-size: 22px;
-        }
+.card-list {
+
+    h2 {
+        margin-bottom: 5px;
     }
 
     &__content {
